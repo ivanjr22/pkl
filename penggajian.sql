@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 01, 2021 at 07:06 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Generation Time: Jan 17, 2022 at 09:04 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,21 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `data_jabatan` (
   `id_jabatan` int(11) NOT NULL,
-  `nama_jabatan` varchar(120) NOT NULL,
-  `gaji_pokok` varchar(50) NOT NULL,
-  `tj_transport` varchar(50) NOT NULL,
-  `uang_makan` varchar(50) NOT NULL
+  `nama_jabatan` varchar(120) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `data_jabatan`
 --
 
-INSERT INTO `data_jabatan` (`id_jabatan`, `nama_jabatan`, `gaji_pokok`, `tj_transport`, `uang_makan`) VALUES
-(1, 'HRD', '4000000', '600000', '400000'),
-(2, 'Staff Marketing', '2500000', '300000', '200000'),
-(3, 'Admin', '2200000', '300000', '200000'),
-(4, 'Sales', '2500000', '300000', '200000');
+INSERT INTO `data_jabatan` (`id_jabatan`, `nama_jabatan`) VALUES
+(1, 'HRDsww'),
+(2, 'Staff Marketing'),
+(3, 'Admin'),
+(4, 'Sales'),
+(5, 'aa');
 
 -- --------------------------------------------------------
 
@@ -85,7 +83,7 @@ CREATE TABLE `data_pegawai` (
   `password` varchar(32) NOT NULL,
   `jenis_kelamin` varchar(15) NOT NULL,
   `jabatan` varchar(50) NOT NULL,
-  `tanggal_masuk` date NOT NULL,
+  `tanggal_masuk` varchar(255) NOT NULL,
   `status` varchar(50) NOT NULL,
   `photo` varchar(100) NOT NULL,
   `hak_akses` int(11) NOT NULL
@@ -97,7 +95,11 @@ CREATE TABLE `data_pegawai` (
 
 INSERT INTO `data_pegawai` (`id_pegawai`, `nik`, `nama_pegawai`, `username`, `password`, `jenis_kelamin`, `jabatan`, `tanggal_masuk`, `status`, `photo`, `hak_akses`) VALUES
 (1, '123456789', 'Fauzi', 'fauzi', '0bd9897bf12294ce35fdc0e21065c8a7', 'Laki-Laki', 'Admin', '2020-12-26', 'Karyawan Tetap', 'pegawai-210101-a7ca89f5fc.png', 1),
-(2, '0987654321', 'Dodi', 'dodi', 'dc82a0e0107a31ba5d137a47ab09a26b', 'Laki-Laki', 'Staff Marketing', '2021-01-02', 'Karyawan Tidak Tetap', 'pegawai-210101-9847084dc8.png', 2);
+(2, '0987654321', 'Dodi', 'dodi', 'dc82a0e0107a31ba5d137a47ab09a26b', 'Laki-Laki', 'Staff Marketing', '2021-01-02', 'Karyawan Tidak Tetap', 'pegawai-210101-9847084dc8.png', 2),
+(3, '1931710120', 'Muhammad Ivan Fadhilah', 'ivan', '2c42e5cf1cdbafea04ed267018ef1511', 'Laki-Laki', 'Admin', '2022-02-13', 'Karyawan Tetap', 'pegawai-220111-fdc94fa459.jpg', 1),
+(8, '11111', 'asd', 'ivan', '2c42e5cf1cdbafea04ed267018ef1511', 'Laki-Laki', 'HRD', '2022-01-17', 'Karyawan Tetap', 'pegawai-220117-d8acadb8c7.jpg', 1),
+(9, '1', '2asds', 'ivan', '62b76f05f413f934c55e589f1776f733', 'Laki-Laki', 'Admin', 'sad', 'Karyawan Tidak Tetap', 'pegawai-220117-8f8d6502d5.jpeg', 2),
+(10, '1111', 'wes', 'faiq', '330cfc1d106bf2000a4b5601684b323b', 'Laki-Laki', 'HRDsww', 'e', 'Karyawan Tidak Tetap', 'pegawai-220117-e7fba752b8.jpeg', 2);
 
 -- --------------------------------------------------------
 
@@ -181,7 +183,7 @@ ALTER TABLE `potongan_gaji`
 -- AUTO_INCREMENT for table `data_jabatan`
 --
 ALTER TABLE `data_jabatan`
-  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `data_kehadiran`
@@ -193,7 +195,7 @@ ALTER TABLE `data_kehadiran`
 -- AUTO_INCREMENT for table `data_pegawai`
 --
 ALTER TABLE `data_pegawai`
-  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `hak_akses`
