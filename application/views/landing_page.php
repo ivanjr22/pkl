@@ -8,6 +8,8 @@
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/landing/css/bootstrap/bootstrap.min.css" />
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/landing/css/fontawesome/css/all.min.css" />
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/landing/css/style.css" />
+      <link rel="shortcut icon" href="assets/img/ss.png" type="image/x-icon">
+
    </head>
    <body>
       <!-- Pre Loader -->
@@ -264,7 +266,7 @@
          <div class="container">
             <div class="row">
                <div class="col-12 text-center my-3">
-                  Copyright &copy; Dwi Febi Fauzi | Penggajian 2020 - All Rights Reserved
+                  Copyright &copy; 2022
                </div>
             </div>
          </div>

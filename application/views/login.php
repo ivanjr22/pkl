@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login | Aplikasi Penggajian</title>
+  <title>Login | Witel malang </title>
   <link href="<?php echo base_url(); ?>assets/css/login.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
   <script src="<?php echo base_url(); ?>assets/js/a81368914c.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/ss.png" type="image/x-icon">
+
 </head>
 <body>
   <div class="container">
@@ -15,7 +17,7 @@
     <div class="login-content">
       <form class="user" method="POST" action="<?php echo base_url('login') ?>">
         <img src="<?php echo base_url(); ?>assets/img/avatar.svg">
-        <h2 class="title">APLIKASI PENGGAJIAN</h2>
+        <h2 class="title">WITEL MALANG</h2>
         <?php echo $this->session->flashdata('pesan')?>
               <div class="input-div one">
                  <div class="i">

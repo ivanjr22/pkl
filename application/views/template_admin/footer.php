@@ -2,7 +2,7 @@
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Dwi Febi Fauzi | Penggajian 2020</span>
+            <span>Copyright &copy; 2022</span>
           </div>
         </div>
       </footer>
@@ -26,6 +26,7 @@
 <script src="<?php echo base_url(); ?>assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/demo/datatables-demo.js"></script>
 <link href="<?php echo base_url(); ?>assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="assets/img/ss.png" type="image/x-icon">
 
 <script type="text/javascript">
 // Pie Chart Example

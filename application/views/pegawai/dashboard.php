@@ -33,16 +33,17 @@
 	  				<td><?php echo $p->jabatan?></td>
 	  			</tr>
 
-	  			<tr>
-	  				<td>Tanggal Masuk</td>
-	  				<td>:</td>
-	  				<td><?php echo $p->tanggal_masuk?></td>
-	  			</tr>
+	  			
 
 	  			<tr>
 	  				<td>Status</td>
 	  				<td>:</td>
 	  				<td><?php echo $p->status?></td>
+	  			</tr>
+				  <tr>
+	  				<td>Keterangan</td>
+	  				<td>:</td>
+	  				<td><?php echo $p->tanggal_masuk?></td>
 	  			</tr>
 	  		</table>
 	  	</div>

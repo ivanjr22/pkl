@@ -21,7 +21,7 @@
               <th class="text-center">Jabatan</th>
               <th class="text-center">Status</th>
               <th class="text-center">Hak Akses</th>
-              <th class="text-center">Tanggal Masuk</th>
+              <th class="text-center">Keterangan</th>
               <th class="text-center">Actions</th>
            </tr>
          </thead>
